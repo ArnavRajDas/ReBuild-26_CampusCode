@@ -69,7 +69,6 @@ This project was created for the **CampusCode Dashboard Recreation challenge** w
 
 https://github.com/user-attachments/assets/fc3ac17d-9288-43aa-89a0-5490e31b5826
 
-  </a>
 
   <p><i>A short walkthrough of the CampusCode landing page, authentication flow, and student dashboard.</i></p>
 
