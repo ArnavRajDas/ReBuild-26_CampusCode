@@ -60,6 +60,7 @@ export default function BuildTogether() {
           ref={videoRef}
           className="showcase-video"
           loop
+          muted
           playsInline
           preload="auto"
         >
