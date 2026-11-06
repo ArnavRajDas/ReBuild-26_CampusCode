@@ -11,7 +11,7 @@
   </p>
 
   <p>
-    <a href="after deployment">
+    <a href="https://re-build-26-campus-code.vercel.app/">
       <img src="https://img.shields.io/badge/Explore%20Live%20Site-7458F8?style=for-the-badge&logo=vercel&logoColor=white" alt="Explore live site" />
     </a>
     <a href="https://github.com/ArnavRajDas/ReBuild-26_CampusCode">
@@ -33,6 +33,7 @@
 
 <br />
 
+
 ## A student platform with an arena mindset
 
 CampusCode is a front-end recreation of a modern student ecosystem where people can discover events, join competitions, build teams, and keep track of their progress.
@@ -49,7 +50,7 @@ This project was created for the **CampusCode Dashboard Recreation challenge** w
 
 <div align="center">
 
-### [Open the CampusCode Landing page ↗](after deployment)
+### [Open the CampusCode Landing page ↗](https://re-build-26-campus-code.vercel.app/)
 
 
 
