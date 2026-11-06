@@ -65,10 +65,9 @@ This project was created for the **CampusCode Dashboard Recreation challenge** w
 <div align="center">
 
   <!-- Replace the link below with the GitHub-generated video URL when publishing the showcase. -->
-  
-
-https://github.com/user-attachments/assets/fc3ac17d-9288-43aa-89a0-5490e31b5826
-
+  <a href="./Round1.1/React/src/assets/DEMO video round1 campuscode.mp4">
+    <img src="https://img.shields.io/badge/▶%20Watch%20the%20Demo%20Video-7458F8?style=for-the-badge" alt="Watch the CampusCode demo video" />
+  </a>
 
   <p><i>A short walkthrough of the CampusCode landing page, authentication flow, and student dashboard.</i></p>
 
