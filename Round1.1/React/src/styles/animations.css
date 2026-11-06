@@ -1,0 +1,189 @@
+                                                                        
+                               
+                                                                        
+                                                                              
+                                                                          
+
+                                                                               
+                                                                               
+                                                                       
+                                                                                   
+                                                                           
+
+:root {
+    --motion-ease: cubic-bezier(0.22, 0.61, 0.36, 1);                                
+    --motion-lift: -2px;                                                               
+}
+
+                                                                        
+                                                                           
+                                                                        
+.cursor-glow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 300px;                                                                    
+    height: 300px;
+    border-radius: 50%;
+    pointer-events: none;                                                               
+   background: radial-gradient(
+        circle,
+        rgba(146, 119, 255, 0.08) 0%,
+        rgba(146, 119, 255, 0.035) 40%,
+        transparent 70%
+    );
+    opacity: 0;
+    transition: opacity 0.4s var(--motion-ease);
+    will-change: transform, opacity;
+}
+
+.cursor-glow--visible {
+    opacity: 1;
+}
+
+                                                                        
+                                              
+                                                                          
+                                                                                     
+                                                                                           
+                                                                        
+
+                  
+body .login-btn,
+body .nav-links a {
+    transition: color 0.3s ease, translate 0.35s var(--motion-ease);
+}
+body .hero-cta {
+    transition: background 0.3s ease, color 0.3s ease, translate 0.35s var(--motion-ease);
+}
+body .arena-view-all {
+    transition: color 0.3s ease, translate 0.35s var(--motion-ease);
+}
+                                                                                                    
+
+                      
+body .site-nav__link {
+    transition: color 0.25s var(--motion-ease), translate 0.35s var(--motion-ease);
+}
+body .show-btn {
+    transition: background 0.2s var(--motion-ease), border-color 0.2s var(--motion-ease),
+        translate 0.35s var(--motion-ease);
+}
+body .captcha__new {
+    transition: opacity 0.2s var(--motion-ease), translate 0.35s var(--motion-ease);
+}
+
+                 
+body .btn-view {
+    transition: translate 0.35s var(--motion-ease);
+}
+body .btn-reg {
+    transition: background 0.15s, translate 0.35s var(--motion-ease);
+}
+body .btn-journey {
+    transition: translate 0.35s var(--motion-ease);
+}
+
+                                                        
+body .nav__item {
+    transition: background-color 0.15s ease, color 0.15s ease, translate 0.35s var(--motion-ease);
+}
+
+                                                         
+@media (hover: hover) {
+    body .login-btn:hover,
+    body .get-started-btn:hover,
+    body .hero-cta:hover,
+    body .final-cta-button:hover,
+    body .arena-view-all:hover,
+    body .show-btn:hover,
+    body .captcha__new:hover,
+    body .btn-view:hover,
+    body .btn-reg:hover,
+    body .btn-journey:hover {
+        translate: 0 var(--motion-lift);
+    }
+
+    body .nav-links a:hover,
+    body .site-nav__link:hover {
+        translate: 0 -1px;
+    }
+
+    body .nav__item:hover {
+        translate: 3px 0;
+    }
+}
+
+                                                                       
+body .login-btn:active,
+body .get-started-btn:active,
+body .hero-cta:active,
+body .final-cta-button:active,
+body .btn-view:active,
+body .btn-reg:active,
+body .btn-journey:active,
+body .submit-btn:active:not(:disabled) {
+    translate: 0 0;
+}
+
+                                                                                 
+body .login-submit:disabled,
+body .login-submit:disabled:hover {
+    transform: none;
+    box-shadow: none;
+    translate: none;
+    cursor: not-allowed;
+}
+
+                                                                        
+                                                                               
+                                                                              
+                                                                     
+                                                                        
+body .bg-dots .bg-dot {
+    background: rgba(116, 88, 248, 0.38);
+    animation-name: dot-drift-premium;
+    animation-timing-function: ease-in-out;
+    will-change: transform, opacity;
+}
+
+@keyframes dot-drift-premium {
+    0%   { transform: translate3d(0, 0, 0) scale(1);        opacity: 0.35; }
+    25%  { transform: translate3d(22px, -30px, 0) scale(1.15); opacity: 0.9; }
+    50%  { transform: translate3d(-14px, -62px, 0) scale(0.9); opacity: 1; }
+    75%  { transform: translate3d(26px, -36px, 0) scale(1.1);  opacity: 0.7; }
+    100% { transform: translate3d(8px, -10px, 0) scale(1);   opacity: 0.4; }
+}
+
+                                                                        
+                                                                                 
+                                                                                      
+                                                                
+                                                                        
+
+                                                                        
+                                                          
+                                                                               
+                                                                        
+@media (prefers-reduced-motion: reduce) {
+    body .bg-dots .bg-dot {
+        animation: none;
+    }
+
+    body .login-btn:hover,
+    body .get-started-btn:hover,
+    body .hero-cta:hover,
+    body .final-cta-button:hover,
+    body .arena-view-all:hover,
+    body .show-btn:hover,
+    body .captcha__new:hover,
+    body .btn-view:hover,
+    body .btn-reg:hover,
+    body .btn-journey:hover,
+    body .nav-links a:hover,
+    body .site-nav__link:hover,
+    body .nav__item:hover {
+        translate: none;
+    }
+}
